@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">¿Qué es Divertivo?</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar"  
+            src="{% static 'core/img/avatar-divertivo.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Divertivo</h2>   
+        <p>Divertivo es una plataforma de enseñanza y aprendizaje incluyente en la cuál se 
+            pueden encontrar diferentes cursos de diferentes temáticas. Sus contenidos cuentan 
+            con componentes de accesibilidad como lo son la interpretación en lengua de señas 
+            colombiana, el subtitulado y la audiodescripción. 
+            Actualmente se está desarrollando una nueva versión sobre el framework de desarrollo 
+            web Django que está basado en Python y con el cual se busca integrar tecnologías 
+            de inteligencia artificial como el reconocimiento de emociones para medir el grado de
+             satisfacción con cada uno de nuestros contenidos. </p>
+            <p> Nuestro equipo de trabajo interdisciplinar que está conformado por instructores y 
+                aprendices de diferentes redes de conocimiento. En el desarrollo de gran parte de 
+                nuestros contenidos se han involucrado personas con discapacidad que han aportado
+                y fortalecido sus competencias en sus diferentes áreas de formación.</p>
+    </div>
+</div>
+{% endblock %}
